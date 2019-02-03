@@ -1,13 +1,5 @@
 import React, {Component} from 'react'
-
-class RegularClass {}
-class ComponentClass extends Component {}
-
-const regularClassInstance = new RegularClass();
-const componentClassInstance = new ComponentClass();
-
-console.log(regularClassInstance);
-console.log(componentClassInstance);
+import Projects from './Projects'
 
 class App extends Component 
 {
@@ -24,10 +16,11 @@ class App extends Component
     getBio = () => {
         const bio = this.state.displayBio ?  (
             <div>
+                <hr />
                 <p>This is my BIO!</p>
-                <button onClick={this.toggleBio}>Hide BIO</button>
+                <button onClick={this.toggleBio}>Hide my Bio</button>
             </div>
-        ) : <p><button onClick={this.toggleBio}>Show BIO</button></p>;
+        ) : <p><button onClick={this.toggleBio}>Show my Bio</button></p>;
         return bio;
     }
 
@@ -35,8 +28,11 @@ class App extends Component
         return (
             <div>
                 <h1>Hello!</h1>
-                <p>This is App Component</p>
+                <p>My name is Paweł Twardziak and I am a web developer.</p>
+                <p>I am always looking forward to working on meaningful projects.</p>
                 {this.getBio()}
+                <hr />
+                <Projects />
             </div>
         )
     }
