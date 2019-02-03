@@ -19,10 +19,6 @@ class Title extends Component
         'success', 'info', 'warning'
     ]
 
-    // constructor(props, context) {
-    //     super(props, context);
-    // }
-
     componentDidMount() {
         this._isMounted = true;
         this._fadeOutTimeout = this.setFadeOutTimeout();
