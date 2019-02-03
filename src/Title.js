@@ -8,7 +8,6 @@ class Title extends Component
     }
     
     componentDidMount() {
-        console.log('Title component has mounted.');
         this.animateTitles();
     }
 
@@ -16,7 +15,7 @@ class Title extends Component
         setInterval(() => {
             const titleIndex = (this.state.titleIndex + 1) % TITLES.length;
             this.setState({titleIndex: titleIndex});
-        }, 4000);
+        }, 3000);
     }
 
     render() {
