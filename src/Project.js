@@ -11,9 +11,9 @@ class Project extends Component
                 margin: '10px'
             }}>
                 <h3>{title}</h3>
-                <img src={image} alt={title} style={{maxHeight: '200px', maxWidth: '200px'}}></img>
+                <img src={image} alt={title} style={{maxHeight: '200px', maxWidth: '200px', display: 'inline-block', margin: 10}}></img>
                 <p>{description}</p>
-                <a href={link}>{link}</a>
+                <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
             </div>
         )
     }
