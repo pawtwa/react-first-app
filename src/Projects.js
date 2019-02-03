@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import PROJECTS from './data/projects';
+import Project from './Project'
 
 class Projects extends Component
 {
@@ -11,7 +12,7 @@ class Projects extends Component
                     {
                         PROJECTS.map((PROJECT) => {
                             return (
-                                <div key={PROJECT.id}>{ PROJECT.title }</div>
+                                <Project key={PROJECT.id} item={PROJECT} />
                             )
                         })
                     }
