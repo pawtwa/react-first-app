@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import TITLES from './data/titles';
+import TITLES from '../data/titles';
 
 class Title extends Component
 {

@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import SOCIAL_PROFILES from './data/socialProfiles';
+import SOCIAL_PROFILES from '../data/socialProfiles';
 import SocialProfile from './SocialProfile'
 
 class SocialProfiles extends Component
